@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+
+  <head>
+   <link type="text/css" rel="stylesheet" href="{{ url_for('static',    filename='css/demo2.css') }}">
+
+  </head>
+   <body>
+    {% extends "template.html" %}
+    {% block content %}
+        <h1>{{pred}}</h1>
+    {% endblock %}
+   </body>
+</html>

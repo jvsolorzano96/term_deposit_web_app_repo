@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Term Deposit Purchase Prediction</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static',    filename='css/demo2.css') }}">
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>Term Deposit Purchase Prediction</h1>
+
+     <!-- Form to enter new data for predictions  -->
+    <form action="{{ url_for('predict')}}"method="POST">
+      <input type="text" name="age" placeholder="Age" required="required" /><br>
+    	<input type="text" name="job" placeholder="job" required="required" /><br>
+    	<input type="text" name="marital" placeholder="marital" required="required" /><br>
+        <input type="text" name="education" placeholder="education" required="required" /><br>
+        <input type="text" name="housing" placeholder="housing" required="required" /><br>
+        <input type="text" name="loan" placeholder="loan" required="required" /><br>
+        <input type="text" name="contact" placeholder="contact" required="required" /><br>
+    	<input type="text" name="month" placeholder="month" required="required" /><br>
+        <input type="text" name="day_of_week" placeholder="day_of_week" required="required" /><br>
+        <input type="text" name="default" placeholder="duration" required="required" /><br>
+        <input type="text" name="campaign" placeholder="campaign" required="required" /><br>
+        <input type="text" name="pdays" placeholder="pdays" required="required" /><br>
+        <input type="text" name="previous" placeholder="previous" required="required" /><br>
+        <input type="text" name="poutcome" placeholder="poutcome" required="required" /><br>
+        <input type="text" name="emp.var.rate" placeholder="emp.var.rate" required="required" /><br>
+        <input type="text" name="cons.price.idx" placeholder="cons.price.idx" required="required" /><br>
+        <input type="text" name="cons.conf.idx" placeholder="cons.conf.idx" required="required" /><br>
+        <input type="text" name="euribor3m" placeholder="euribor3m" required="required" /><br>
+        <input type="text" name="nr.employed" placeholder="nr.employed" required="required" /><br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+
+
+ </div>
+ {{pred}}
+
+</body>
+</html>
