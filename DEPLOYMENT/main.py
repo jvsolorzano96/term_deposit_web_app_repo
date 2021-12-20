@@ -6,7 +6,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-model = load_model('model')
+model = load_model('model.pkl')
 cols = ['age', 'job', 'marital', 'education', 'housing', 'loan','contact', 'month', 'day_of_week',
         'default', 'campaign', 'pdays', 'previous', 'poutcome','emp.var.rate', 'cons.price.idx', 'cons.conf.idx',
         'euribor3m', 'nr.employed']
